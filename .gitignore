@@ -1,0 +1,11 @@
+glob:.DS_Store
+node_modules/
+public/components/
+public/dist/
+dist/
+npm-debug.log
+jasmine.html
+public/index.html
+bin/
+include/
+lib/
