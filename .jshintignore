@@ -1,2 +1,3 @@
 .git
 public/components
+public/app/config.js
