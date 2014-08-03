@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- {{pkg.title}} {{pkg.version}} [{{buildType}}] - Copyright {{year}} -->
+<!--[if lt IE 7]><html lang="en-us" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="en-us" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="en-us" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en-us" class="no-js"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+
+    <title>LearningStation Question Editor</title>
+
+    <meta name="description" content="Backbone Require Boilerplate">
+    <meta name="author" content="Ali Raza">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-startup-image" href="/assets/img/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+    <link rel="apple-touch-startup-image" href="/assets/img/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+    <link rel="apple-touch-startup-image" href="/assets/img/iphone.png" media="screen and (max-device-width: 320px)">
+    <link rel="author" href="humans.txt">
+
+    <link rel="dns-prefetch" href="https://themes.googleusercontent.com" />
+
+    <link href="//fonts.googleapis.com/css?family=Lato:200,400,900|Droid+Sans+Mono" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{{config.cdn_files}}}/{{{stylesheet}}}">
+
+    <script src="{{{config.cdn_files}}}/{{{headerScript}}}"></script>
+</head>
+
+<body class="bbr {{buildClass}} loading">
+    <div role="main" id="main">
+        <div class="container">
+            <div class="blankslate-unit hidden-phone">
+                <h1><span><i class="fa fa-flask"></i>&nbsp;Backbone Require JS Boilerplate <sup class="badge badge-info">Alpha</sup></span></h1>
+                <p><i class="fa fa-spinner fa-spin"></i>&nbsp;Loading, Please Wait.</p>
+            </div>
+            <div class="visible-phone" style="text-align: center">
+                <h2><i class="fa fa-spinner fa-spin"></i>&nbsp;Starting the App.</h2>
+            </div>
+        </div>
+    </div>
+    <script data-main="/app/config" data-env="insight" src="{{{config.cdn_files}}}/{{{coreScript}}}"></script>
+</body>
+</html>

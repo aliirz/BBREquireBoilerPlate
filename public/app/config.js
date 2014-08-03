@@ -13,13 +13,15 @@ define(function () {
     require.config({
         deps: ['init'],
         paths: {
-            backbone			   : '../components/backbone/backbone',
-            handlebars			 : '../components/handlebars/handlebars',
-            jquery				   : '../components/jquery/dist/jquery.min',
-            json				     : '../components/requirejs-plugins/src/json',
-            text				     : '../components/requirejs-text/text/',
-            underscore          : '../components/underscore/underscore-min',
-            underscore_string   : '../components/underscore.string/lib/underscore.string',
+            backbone    : '../components/backbone/backbone',
+            backbone_route_filer    : '../components/backbone-route-filter/backbone-route-filter-min',
+            ackbone_route_manager   : '../components/routemanager/backbone.routemanager',
+            handlebars			    : '../components/handlebars/handlebars',
+            jquery				    : '../components/jquery/dist/jquery.min',
+            json				    : '../components/requirejs-plugins/src/json',
+            text				    : '../components/requirejs-text/text/',
+            underscore              : '../components/underscore/underscore-min',
+            underscore_string       : '../components/underscore.string/lib/underscore.string',
 
 			//Bootstrap Components
             'bootstrap/bootstrap-slider'     : '../components/bootstrap/js/slider',
@@ -38,6 +40,8 @@ define(function () {
         },
         shim: {
             backbone               : { deps: ['underscore', 'jquery'], exports: 'Backbone' },
+            backbone_route_manager : { deps: ['backbone'] },
+            backbone_route_filter  : { deps: ['backbone'] },
             bootstrap              : { deps: ['jquery'] },
             handlebars             : { exports: 'Handlebars' },
             underscore             : { exports: '_' },
@@ -55,7 +59,7 @@ define(function () {
             'bootstrap/bootstrap-scrollspy'  : { deps: ['jquery'], exports: '$.fn.scrollspy'},
             'bootstrap/bootstrap-tab'        : { deps: ['jquery'], exports: '$.fn.tab' },
             'bootstrap/bootstrap-tooltip'    : { deps: ['jquery'], exports: '$.fn.tooltip' },
-            'bootstrap/bootstrap-transition' : { deps: ['jquery'], exports: '$.support.transition' },            
-            }
+            'bootstrap/bootstrap-transition' : { deps: ['jquery'], exports: '$.support.transition' },
+        }
     });
 });
